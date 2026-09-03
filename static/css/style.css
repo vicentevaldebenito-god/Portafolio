@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(180deg, #060709 0%, #11141b 50%, #090a0d 100%);
+    background-attachment: fixed;
+    color: rgb(201, 211, 228);
+}
+
+.Nav {
+    position: absolute;
+
+}
