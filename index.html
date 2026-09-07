@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,79 @@
     <meta name="author" content="Vicente Valdebenito">
     <link rel="stylesheet" href="static/css/style.css">
 </head>
-<body>
-    <header>
 
-</header>
+<body>
+    <header class="Header">
         <nav class="Nav">
             <div class="Nombre">
                 <h1>Vicente Valdebenito</h1>
             </div>
             <div class="Nav_Links">
-                <a href="#">Sobre mi</a>
-                <a href="#">Proyectos</a>
-                <a href="#">Habilidades</a>
-                <a href="#">Contactos</a>
+                <a href="#Sobre_Mi" class="Nav_Link">Sobre mi</a>
+                <a href="#Proyectos" class="Nav_Link">Proyectos</a>
+                <a href="#" class="Nav_Link">Habilidades</a>
+                <a href="#" class="Nav_Link">Contactos</a>
             </div>
         </nav>
     </header>
-    <main></main>
+    <main class="Main">
+        <div id="Sobre_Mi" class="Sobre_Mi">
+            <div class="Sobre_Mi_Nombre">
+                <h1>Vicente Valdebenito</h1>
+            </div>
+            <div class="Sobre_Mi_Desc">
+                <p>Estudiante de 3°Medio en el Liceo VVH , Especificamente Frontend de Desarrollo Web</p>
+            </div>
+        </div>
+        <section class="Habilidades">
+            <div class="Habilidades_Titulo">
+                <h1>Tecnologías y Habilidades</h1>
+            </div>
+            <div class="Habilidades_Lista">
+                <div class="Habilidad">
+                    HTML
+                    <div class="Habilidad_Imagen"><img src="static/images/html.png" alt="Html"></div>
+                </div>
+                <div class="Habilidad">
+                    CSS
+                    <div class="Habilidad_Imagen"><img src="static/images/css.png" alt="Css"></div>
+                </div>
+                <div class="Habilidad">
+                    JavaScript
+                    <div class="Habilidad_Imagen"><img src="static/images/Js.jfif" alt="Js"></div>
+                </div>
+                <div class="Habilidad">
+                    Github
+                    <div class="Habilidad_Imagen"><img src="static/images/Github.jfif" alt="Github"></div>
+                </div>
+            </div>
+        </section>
+        <section class="Proyectos" id="Proyectos">
+            <h1 class="Proyecto_Titulo">Proyectos</h1>
+            <div class="Proyecto">
+                <div class="Proyecto_Imagen">
+                    <img src="static/images/Prospere.png" alt="Proyecto1">
+                </div>
+                <div class="Proyecto_Desc">
+                    <h1 class="Proyecto_Nombre">Prospere</h1>
+                    <p class="Proyecto_Sobre">Proyecto de 2 meses sobre una applicacion que ayude
+                        a emprendimientos a expandir su conocimiento y manejar su empresa</p>
+                </div>
+            </div>
+            <div class="Proyecto">
+                <div class="Proyecto_Imagen">
+                    <img src="static/images/Proyect.png" alt="Proyecto1">
+                </div>
+                <div class="Proyecto_Desc">
+                    <h1 class="Proyecto_Nombre">Project Moon Website</h1>
+                    <p class="Proyecto_Sobre">Proyecto personal de un intento de crear
+                        un sitio web de la franquicia de project moon
+                    </p>
+                </div>
+        </section>
+    </main>
     <footer></footer>
+    <script src="static/js/script.js"></script>
 </body>
+
 </html>
