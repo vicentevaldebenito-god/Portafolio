@@ -9,12 +9,13 @@ body {
     background: linear-gradient(180deg, #060709 0%, #11141b 50%, #090a0d 100%);
     background-attachment: fixed;
     color: rgb(201, 211, 228);
+    font-family: Arial;
+    overflow-x: hidden;
 }
-
 
 .Header {
     width: 100%;
-    height: 120px;
+    min-height: 120px;
     background-image: url('../../static/images/Pager2.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -24,6 +25,7 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    padding: 10px 0;
 }
 
 .Nav {
@@ -31,17 +33,22 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 36px;
-    padding: 0 40px;
+    margin-top: 20px;
+    padding: 0 20px;
     box-sizing: border-box;
     flex-wrap: wrap;
 }
 
 .Nav_Links {
     display: flex;
-    gap: 25px;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top:10px;
 }
 
+.Nombre{
+    margin-top:10px;
+}
 .Nav_Link {
     color: #00d2ff;
     text-decoration: none;
@@ -49,7 +56,7 @@ body {
     font-weight: bold;
     font-size: 15px;
     text-shadow: 0 0 8px rgba(0, 210, 255, 0.8);
-    transition: color 1s ease, text-shadow 1s ease;
+    transition: color 0.3s ease, text-shadow 1s ease;
 }
 
 .Nav_Link:hover {
@@ -57,13 +64,17 @@ body {
     text-shadow: 0 0 12px #ffffff, 0 0 20px #00d2ff;
 }
 
+
 .Main {
     display: flex;
-    margin: 10px;
+    margin: 10px auto;
+    max-width: 1100px;
     padding: 20px;
     flex-direction: column;
-    gap: 100px;
+    gap: 60px;
+    margin-top: 30px;
 }
+
 
 .Sobre_Mi {
     display: flex;
@@ -73,8 +84,8 @@ body {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
     flex-direction: row;
     align-items: center;
-    gap: 350px;
-    padding: 50px;
+    justify-content: space-between;
+    gap: 40px;
     transition: box-shadow 1s ease;
 }
 
@@ -92,38 +103,28 @@ body {
 
 .Sobre_Mi_Desc p {
     color: #00d2ff;
-    font-size: 25px;
+    font-size: 18px;
     text-shadow: 0 0 8px rgba(0, 210, 255, 0.4);
 }
 
+
 .Proyectos {
     display: flex;
-    margin: 10px;
-    padding: 20px;
+    padding: 10px;
     align-items: center;
     flex-direction: column;
-    gap:20px;
+    gap: 30px;
 }
 
-.Proyecto_Titulo{
+.Proyecto_Titulo {
     display: flex;
     background: #050608;
     border: 3px solid #1e222d;
-    padding: 35px 30px;
+    padding: 20px 30px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
-    flex-direction: row;
     align-items: center;
-    padding: 30px;
+    justify-content: center;
     transition: box-shadow 1s ease;
-}
-.Proyectos img {
-    width: 350px;
-    height: 175px;
-    border:3px #1e222d solid;
-}
-
-.Proyecto:hover {
-    box-shadow: 0px 4px 24px rgba(0, 210, 255, 0.8);
 }
 
 .Proyecto {
@@ -134,14 +135,26 @@ body {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
     flex-direction: row;
     align-items: center;
-    gap: 350px;
-    padding: 50px;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
     transition: box-shadow 1s ease;
+}
+
+.Proyecto:hover {
+    box-shadow: 0px 4px 24px rgba(0, 210, 255, 0.8);
+}
+
+.Proyectos img {
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+    border: 3px #1e222d solid;
 }
 
 .Proyecto_Nombre {
     color: #ffffff;
-    font-size: 52px;
+    font-size: 36px;
     font-weight: bold;
     margin-bottom: 12px;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
@@ -149,56 +162,161 @@ body {
 
 .Proyecto_Desc {
     color: #00d2ff;
-    font-size: 25px;
+    font-size: 18px;
     text-shadow: 0 0 8px rgba(0, 210, 255, 0.4);
 }
 
-.Habilidades{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    gap:25px;
+.Proyecto_Link {
+    margin-top: 15px;
+    color: white;
+    word-break: break-all;
 }
 
-.Habilidades_Titulo{
+.Link {
+    text-decoration: none;
+    color: white;
+}
+
+.Link:hover {
+    text-decoration: underline;
+}
+
+
+.Habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.Habilidades_Titulo {
     display: flex;
     background: #050608;
     border: 3px solid #1e222d;
-    padding: 35px 30px;
+    padding: 20px 30px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-    width:40%;
-    padding: 30px;
     transition: box-shadow 1s ease;
+    text-align: center;
 }
 
-.Habilidades_Lista{
-    display:flex;
+.Habilidades_Lista {
+    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap:50px;
+    gap: 20px;
+    width: 100%;
 }
-.Habilidad{
+
+.Habilidad {
     display: flex;
     background: #050608;
     border: 3px solid #1e222d;
-    padding: 35px 30px;
+    padding: 20px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width:200px;
-    height:20%;
+    width: 160px;
     transition: box-shadow 1s ease;
-    gap:10px;
+    gap: 10px;
 }
 
-.Habilidad_Imagen img{
-    width:100px;
-    height:100px;
-    border-radius:50%;
+.Habilidad_Imagen img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5%;
     border: 3px solid #1e222d;
+    object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+    .Nombre {
+        display: none;
+    }
+
+    .Header {
+        background-size: 100% 100%;
+        min-height: 100px;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .Nav {
+        margin-top: 0;
+        padding: 0 5px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .Nav_Links {
+        justify-content: center;
+        align-items: center;
+        gap: 6px 12px; 
+        width: 100%;
+        max-width: 320px; 
+        margin: 0 auto;
+        margin-top:20px;
+    }
+
+    .Nav_Link {
+        font-size: 11px; 
+        white-space: nowrap;
+    }
+
+    .Main {
+        gap: 35px;
+        margin-top: 15px;
+        padding: 10px;
+    }
+
+    .Sobre_Mi, 
+    .Proyecto {
+        flex-direction: column;
+        gap: 20px;
+        padding: 25px 15px;
+        text-align: center;
+    }
+
+    .Sobre_Mi_Nombre h1,
+    .Proyecto_Nombre {
+        font-size: 24px;
+    }
+
+    .Sobre_Mi_Desc p,
+    .Proyecto_Desc {
+        font-size: 15px;
+    }
+
+    .Habilidades_Titulo {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .Habilidades_Titulo h1 {
+        font-size: 20px;
+    }
+
+    .Habilidades_Lista {
+        gap: 15px;
+    }
+
+    .Habilidad {
+        width: 130px;
+        padding: 15px;
+    }
+
+    .Habilidad_Imagen img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .Proyectos img {
+        width: 100%;
+        height: auto;
+    }
 }
