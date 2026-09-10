@@ -230,7 +230,40 @@ body {
     height: 80px;
     border-radius: 5%;
     border: 3px solid #1e222d;
-    object-fit: cover;
+
+}
+
+.Contactos {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Contacto_Titulo {
+    display: flex;
+    background: #050608;
+    border: 3px solid #1e222d;
+    padding: 20px 30px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 1s ease;
+}
+
+.Contacto_Lista {
+    display: flex;
+    background: #050608;
+    border: 3px solid #1e222d;
+    padding: 35px 30px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    transition: box-shadow 1s ease;
 }
 
 
