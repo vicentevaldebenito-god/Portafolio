@@ -266,6 +266,72 @@ body {
     transition: box-shadow 1s ease;
 }
 
+.Educacion_Div {
+    display: flex;
+    background: #050608;
+    border: 3px solid #1e222d;
+    padding: 35px 30px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    height:320px;
+    transition: box-shadow 1s ease;
+}
+
+.Educacion_Div:hover {
+    box-shadow: 0px 4px 24px rgba(0, 210, 255, 0.8);
+}
+
+.Educacion_Imagen img {
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+    border: 3px #1e222d solid;
+}
+
+.Educacion_Desc video{
+    border:none;
+}
+.Educacion {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Educacion_Titulo {
+    display: flex;
+    background: #050608;
+    border: 3px solid #1e222d;
+    padding: 20px 30px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 1s ease;
+}
+
+.Educacion_Nombre {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.Educacion_Desc {
+    color: #00d2ff;
+    font-size: 18px;
+    text-shadow: 0 0 8px rgba(0, 210, 255, 0.4);
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items:center;
+    gap:10px;
+}
 
 @media (max-width: 768px) {
     .Nombre {
@@ -293,7 +359,7 @@ body {
         width: 100%;
         max-width: 320px; 
         margin: 0 auto;
-        margin-top:20px;
+        margin-top: 20px;
     }
 
     .Nav_Link {
@@ -350,6 +416,52 @@ body {
 
     .Proyectos img {
         width: 100%;
+        height: auto;
+    }
+
+    /* --- CLASES NUEVAS AGREGADAS Y ADAPTADAS A CELULAR --- */
+
+    .Contacto_Titulo,
+    .Educacion_Titulo {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .Contacto_Titulo h1,
+    .Educacion_Titulo h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .Contacto_Lista {
+        padding: 20px 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .Educacion_Div {
+        flex-direction: column;
+        height: auto; /* Anula los 320px fijos para que no rompa el diseño */
+        padding: 25px 15px;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .Educacion_Nombre {
+        font-size: 24px;
+    }
+
+    .Educacion_Desc {
+        font-size: 15px;
+    }
+
+    .Educacion_Imagen img {
+        width: 100%;
+        height: auto;
+    }
+
+    .Educacion_Desc video {
+        max-width: 100%;
         height: auto;
     }
 }
