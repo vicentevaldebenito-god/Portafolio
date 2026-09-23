@@ -345,6 +345,9 @@ body {
     gap:10px;
 }
 
+.Contacto_Lista a{
+    font-size:20px;
+}
 @media (max-width: 768px) {
     .Nombre {
         display: none;
